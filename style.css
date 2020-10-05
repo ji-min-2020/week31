@@ -1,0 +1,47 @@
+
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: #196bff;
+
+	transition-property: all;
+	transition-duration:1s;
+	float:left;
+
+
+}
+.box:hover{
+transform:rotate(180deg);
+	background-color: blue;
+}
+
+@-webkit-keyframes gmns {
+	0%{
+		margin-left:0;
+	}
+	50% {
+		margin-left:100px;
+	}
+	100%{
+		margin-left: 0px;
+		transform:rotate(360deg);
+	}
+}
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+
+	animation-name: gmns;
+	animation-duration:3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	float:left;
+
+
+}
+.box:hover{
+
+	background-color: blue;
+}
